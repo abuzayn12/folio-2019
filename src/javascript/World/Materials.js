@@ -135,10 +135,10 @@ export default class Materials
         this.items.metal = this.shades.items.metal
 
         // // Gold
-        // this.shades.items.gold = new MatcapMaterial()
-        // this.shades.items.gold.name = 'shadeGold'
-        // this.shades.items.gold.uniforms.matcap.value = this.resources.items.matcapGoldTexture
-        // this.items.gold = this.shades.items.gold
+        this.shades.items.gold = new MatcapMaterial()
+        this.shades.items.gold.name = 'shadeGold'
+        this.shades.items.gold.uniforms.matcap.value = this.resources.items.matcapGoldTexture
+        this.items.gold = this.shades.items.gold
 
         // Update materials uniforms
         this.shades.updateMaterials = () =>
@@ -181,7 +181,7 @@ export default class Materials
     {
         this.items.floorShadow = new FloorShadowMaterial()
         this.items.floorShadow.depthWrite = false
-        this.items.floorShadow.shadowColor = '#d04500'
+        this.items.floorShadow.shadowColor = '#3c096c'
         this.items.floorShadow.uniforms.uShadowColor.value = new THREE.Color(this.items.floorShadow.shadowColor)
         this.items.floorShadow.uniforms.uAlpha.value = 0
 
